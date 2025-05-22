@@ -1,0 +1,52 @@
+body, html {background-color:#95efbd; padding:0 15px;}
+main {
+    background:#fff;
+    max-width:420px; min-width:320px;/* 반응형 */
+    margin:50px auto 0;
+}
+main .top {
+    display:flex;
+    justify-content:space-between;
+    padding:10px;
+}
+main .top .profile {
+    display:flex;/* 자식에게 block을 주는것보다 부모에게 flex를 줘서 나열시킨다. */
+    align-items:center;/* 교차축을 중앙으로 */
+}
+main .top .profile .photo {
+    width:25px; height:25px;
+    border-radius:50%;
+    background:url(https://images.unsplash.com/photo-1500835556837-99ac94a94552?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dHJhdmVsfGVufDB8fDB8fHww) center / cover;
+}
+main .top .profile em {font-weight:600; font-size:0.875rem; margin:0 4px;}
+main .top .profile .cerified {color:#14ce66; font-size:0.75rem;}
+main .top #top_menu {font-size:0.75rem;}
+main .photo {}
+main .photo img {width:100%/* 부모의 크기를 따라간다 */}
+main .menu {
+    display:flex; justify-content:space-between;
+    align-items:center;
+    padding:10px;
+}
+main .menu .left {
+    display:flex;/* a태그가 인라인으로 인식되서 크기를 줄려고 flex넣음 */
+}
+main .menu .left > * {width:24px;}
+main .menu .left img {/* 공통으로 이용 */
+    width:100%
+}/* 형제로 만들어서 부모를 따라가게 설정한다. */
+main .menu .left .like {}
+main .menu .left .like img {}
+main .menu .left .comment {margin:0 15px;}
+main .menu .left .comment img {}
+main .menu .left .share {}
+main .menu .left .share img {}
+main .menu .right_save {}
+main .menu .right_save img {}
+main .contents {padding:10px;}
+main .contents .story {font-size:0.875rem;}
+main .contents .tag {margin:14px 0;}
+main .contents .tag span {
+    background:#eee; color:#146ece; font-size:0.75rem;
+}
+main .contents .data {font-size:0.75rem; color:#aaa;}
