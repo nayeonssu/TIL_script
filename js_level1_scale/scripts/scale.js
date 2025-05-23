@@ -35,4 +35,6 @@ function weightCal(){
     //input 요소일 경우 값 읽기/수정/삭제 value 속성 사용
     //input이 아닌 다른 요소일 경우 값 읽기/수정/삭제 textContent 또는 innerHtml속성 사용
     result.innerHTML = `당신의 적정체중은 ${normalWeight}kg이며<br> ${userWeight.value-normalWeight}kg <em>초과</em>되셨습니다.`;
+    //적정체중에서 -가 될때
+    //result.innerHTML = `당신의 적정체중은 ${normalWeight}kg이며<br> ${userWeight.value-normalWeight}kg <em>부족</em>합니다다.`;
 }

@@ -1,27 +1,50 @@
-body, html {padding:0 10px; /* background-color:#f5f5f5 */ background-color:wheat;}
+body, html {padding:0 10px; /* background-color:#f5f5f5 */ background-color:#fff;}
 main {
-    max-width:420px; min-width:320px; margin:30px auto 0;
-    background-color:#f5f5f5;
-    border-radius:10px;
+    max-width:420px; min-width:320px;
+    margin:30px auto;
+    height:100vh;
+    border-radius:15px;
+    background-color:#FFDFAC;
     padding:20px;
-    margin-top:30px;
 }
-main h1 {font-size:1.875rem; font-weight:500;}
-main p {font-size:1.125rem; font-weight:500; margin:12px 0 20px;}
+main::after{}
+main h1 {
+    font-size:1.875rem; font-weight:600;
+    color:#EB4848;
+}
+main p {
+    font-size:1.125rem; font-weight:500;
+    margin:23px 0;
+}
 main .info {
-    border-radius:5px;
+    width:100%;
 }
-main .info li {}
+main .info li {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+main .info li:nth-child(2) {margin-top:10px;}
 main .info li span {}
-main .info li input {}
-main #result_btn {
-    background-color:greenyellow;
+main .info li input {
+    border-radius:5px;
+    padding:5px 10px;
+}
+main .diet_img img {
+    margin:23px 0;
+    width:100%;
     border-radius:10px;
-    font-weight:500;
-    padding:15px 23px;
+}
+main #result_btn {
+    background-color:#DD4747;
+    color:#fff;
+    width:100%;
+    padding:15px;
+    border-radius:10px;
 }
 main #result {
-    background:url();
+    text-align:center;
+    line-height:150%;
 }
 /* 자바스크립트에서 생성한 HTML 꾸미기 속성 */
 main #result em {color:#f00;}
