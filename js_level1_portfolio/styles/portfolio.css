@@ -1,7 +1,40 @@
-main {}
-main .design {}
-main .design a {}
-main .design a img {}
-.popup_bg {}
-.popup_bg .content {}
-.popup_bg .content img {}
+main {
+    background-color:#f5f5f5;
+    padding:50px 0;
+    /* height:max-content 내용만큼 */
+}
+main .design {
+    width:1400px; margin:0 auto;/* 가운데 맞춤 */
+    background-color:aqua;
+    display:flex; flex-flow:row wrap;
+}
+main .design a {
+    /* width:25%; *//* 1행에 4개의 이미지만 보이고 싶을때 */
+    width:calc((100% - (20px * 3)) / 4);
+    margin-right:20px;
+    height:200px; overflow:hidden;/* 내가 설정한 영역 안에서만 보이게 */
+    border:2px solid red;
+    margin-bottom:20px;
+}
+main .design a:nth-child(4n) {margin-right:0;}
+main .design a img {
+    width:190%;
+    transform:translate(-23%, -4%);
+}
+/* ---------------클릭 시 실행 팝업 */
+.popup_bg {
+    position:fixed; left:0; top:0;/* 좌표 필수 */
+    width:100%; height:100vh;
+    background:rgba(0,0,0,0.7);
+    display:flex;
+    align-items:center;/* justify-content -> 메인축 | aline-items -> 교차축 */
+    
+}
+.popup_bg .content {
+    background-color:#fff;
+    width:600px;
+    margin:0 auto;
+    height:80vh; overflow:auto;/* overflow -> 영역 안에서만 보이게 :auto; -> 스크롤 보이게 */
+    border-radius:10px;
+}
+.popup_bg .content img {width:100%;}
