@@ -1,3 +1,4 @@
+body, html {scroll-behavior:smooth;}/* 스크롤 자연스럽게 넣는법 */
 main {
     background-color: aqua;
     width:995px; margin:0 auto;
@@ -74,6 +75,19 @@ main section .right_order .product_option select[name=color] {
 main section .right_order .product_option select[name=color] option {}
 main section .right_order .product_option select[name=size] {}
 main section .right_order .product_option select[name=size] option {}
+
+/* JS에서 select클릭 시 출력되는 영역 시작 */
+main section .right_order .order_select {}
+main section .right_order .order_select .list {}
+main section .right_order .order_select .list .color {}
+main section .right_order .order_select .list .size {}
+main section .right_order .order_select .close {}
+main section .right_order .order_select .order_num {}
+main section .right_order .order_select .order_num #minus {}
+main section .right_order .order_select .order_num[name$=num] {}
+main section .right_order .order_select .order_num #plus {}
+/* JS에서 select클릭 시 출력되는 영역 끝 */
+
 main section .right_order .total {}
 main section .right_order .total p {}
 main section .right_order .total .price {}
@@ -94,3 +108,6 @@ main section .right_order .btn_group #cart_btn {
 main section .right_order .btn_group #buy_btn {
     background:#59AFFF; color:#fff;
 }
+main .info {height:100vh;}
+main #review {height:100vh; background-color:goldenrod}
+main .board {height:100vh;}
