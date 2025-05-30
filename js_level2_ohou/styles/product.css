@@ -88,7 +88,10 @@ main section .right_order .order_select .order_num[name$=num] {}
 main section .right_order .order_select .order_num #plus {}
 /* JS에서 select클릭 시 출력되는 영역 끝 */
 
-main section .right_order .total {}
+main section .right_order .total {
+    display:flex; justify-content:space-between;
+    padding:0 10px;
+}
 main section .right_order .total p {}
 main section .right_order .total .price {}
 main section .right_order .total .price em {}
