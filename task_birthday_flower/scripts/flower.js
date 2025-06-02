@@ -1,15 +1,13 @@
 //flower.js
 //test
-//console.log(birthday_flower[0].month);
-//console.log(birthday_flower[0].flower);
-//console.log(birthday_flower[0].content);
+console.log(birthday_flower[0].month)
+console.log(birthday_flower[0].flower)
+console.log(birthday_flower[0].content)
 //변수
-const userYear = document.querySelector('input[name*=year')
-const userMonth = document.querySelector('input[name*=month')
-const userDay = document.querySelector('input[name*=day')
-const resultBtn = document.querySelector('#result_btn')
-const total = document.querySelector('#total')
-console.log(userYear,userMonth,userDay,resultBtn,total);
+const userMonth = document.querySelector('input[name=month]');
+const resultBtn = document.querySelector('#result_btn');
+const total = document.querySelector('.total');
+console.log(userMonth,resultBtn,total);
 resultBtn.addEventListener('click', birthdayFunc)
 function birthdayFunc(){
     if(userMonth.value >= 1 && userMonth.value <= 12){
