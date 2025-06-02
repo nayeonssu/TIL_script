@@ -6,32 +6,13 @@ main {
     background-size:cover;
     padding:0 30px;
 }
-main .grup {}
-main .grup .info {}
-main .grup .info li {
-    margin-right:15px;
-}
-main .grup .info:last-child li {margin-right:0;}
-main .grup .info li input {
+main .data {}
+main .data input {
     width:60px;
     border-radius:2px;
     font-size:0.75rem;
     padding:2px 5px;
 }
-main .grup .info li span {
-    font-size:0.75rem;
-}
-main .grup #result_btn {
-    background-color:#4CB7DE;
-    color:#fff;
-    border-radius:5px;
-    width:100%;
-    font-size:0.875rem;
-    padding:12px;
-    margin:31px 0;
-}
-main .grup #result {
-    background:rgba(255,255,255,0.5);
-    text-align:center;
-    line-height:150%;
-}
+main #result_btn {}
+main #total {}
+main .grup #result {}
