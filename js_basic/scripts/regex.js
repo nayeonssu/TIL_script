@@ -84,3 +84,6 @@ function reviewFunc(){
         //userReview.disabled = true;
     }
 }
+//쇼핑 수량과 가격 알고리즘
+//1개 가격 기준 12500원
+const 
