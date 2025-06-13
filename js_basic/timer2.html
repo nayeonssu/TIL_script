@@ -13,11 +13,11 @@
         }
         .slide_wrap .slide_container {
             display:flex;
-            flex-flow:row-reverse;/* 3 -> 2-> 1 순서로 변경 */
+            flex-flow:row-reverse;/* 3 -> 2-> 1 순서로 변경 */ /* 수평인데 반전되도록 */
             width:max-content;/* 가변형이 되지 않는다. */ /* px이라고 사용할때는 1200 -> slide갯수 만큼의 넓이값 */
             /* width:1200px */
             /* width:calc(400px * 3); 계산방법*/
-            transform:translateX(0px);/* X축으로 400만큼 이동 */
+            transform:translateX(-800px);/* X축으로 400만큼 이동 */
             /* 
             0   = 400*0
             400 = 400*1
