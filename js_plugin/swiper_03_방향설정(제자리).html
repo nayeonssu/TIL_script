@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>swiper-direction1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        * {margin:0; padding:0; line-height:1.0; box-sizing:border-box;}
+        .swiper {width:1000px; height:40px; background:#ddd;}
+        .swiper .swiper-wrapper {}
+        .swiper .swiper-wrapper .swiper-slide {background:#ff0;}
+        .swiper .swiper-wrapper .swiper-slide a {}
+        .swiper .swiper-wrapper .swiper-slide .slide1 {}
+        .swiper .swiper-wrapper .swiper-slide .slide2 {}
+        .swiper .swiper-wrapper .swiper-slide .slide3 {}
+        .swiper .swiper-wrapper .swiper-slide .slide4 {}
+    </style>
+</head>
+<body>
+    <div class="swiper" id="news">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1"><a href="#">李대통령, 취임 19일 만 첫 수석보좌관 회의 주재</a></div>
+            <div class="swiper-slide slide2"><a href="#">"만에 하나 이란 정권 무너지면"…글로벌 경제 '최악 시나리오' [글로벌 머니 X파일]</a></div>
+            <div class="swiper-slide slide3"><a href="#">"미군, 이란 핵시설 '환기구' 통한 지하 타격 노렸다"</a></div>
+            <div class="swiper-slide slide4"><a href="#">호르무즈 해협, 세계 경제 블랙홀 될라… 숨죽인 시장</a></div>
+        </div>
+    </div>
+    <script>
+        const newsSwiper = new Swiper('#news',{
+            //제자리에서 변경하는 방법
+            effect:'fade',
+            autoplay:{delay:2000},
+            loop:true,
+            direction:'horizontal',
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+

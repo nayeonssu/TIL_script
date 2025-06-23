@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>swiper0 마우스드래그 동작</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        * {margin:0; padding:0; line-height:1.0; box-sizing:border-box;}
+        .best_swiper {
+            /* 슬라이드 보이는 크기 설정 */
+            width:1000px; height:600px;/* 부모 크기에 가로 세로 설정하면 그 밑의 자식,자손들은 css링크가 이미 세팅되어있어서 크기를 따로 세팅할 필요가 없다. */
+        }
+        .best_swiper .swiper-wrapper {}
+        .best_swiper .swiper-wrapper .swiper-slide {
+            background-size:cover;
+            background-position:right top;
+            background-repeat:no-repeat;
+        }
+        .best_swiper .swiper-wrapper .slide1 {background-image:url(./images/bnr1.jpg);}
+        .best_swiper .swiper-wrapper .slide2 {background-image:url(./images/bnr2.jpg);}
+        .best_swiper .swiper-wrapper .slide3 {background-image:url(./images/bnr3.jpg);}
+        .best_swiper .swiper-wrapper .slide4 {background-image:url(./images/bnr4.jpg);}
+        /* 슬라이드2 */
+        .new_swiper {
+            width:800px; height:400px;
+        }
+        .new_swiper .swiper-wrapper {}
+        .new_swiper .swiper-wrapper .swiper-slide {}
+        .new_swiper .swiper-wrapper .swiper-slide img {width:100%;}/* 그냥두면 px로 인식한다. */
+        .new_swiper .swiper-wrapper .swiper-slide.slide1 {}
+        .new_swiper .swiper-wrapper .swiper-slide.slide2 {}
+        .new_swiper .swiper-wrapper .swiper-slide.slide3 {}
+        /* 슬라이드3 */
+        .sale_swiper {
+            width:1200px; height:450px;
+        }
+        .sale_swiper .swiper-wrapper {}
+        .sale_swiper .swiper-wrapper .swiper-slide {}
+        .sale_swiper .swiper-wrapper .swiper-slide img {width:100%;}
+        .sale_swiper .swiper-wrapper .slide1 {}
+        .sale_swiper .swiper-wrapper .slide2 {}
+        .sale_swiper .swiper-wrapper .slide3 {}
+        .sale_swiper .swiper-wrapper .slide4 {}
+    </style>
+</head>
+<body>
+    <section>
+        <h1>베스트</h1>
+        <div class="swiper best_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1"></div>
+                <div class="swiper-slide slide2"></div>
+                <div class="swiper-slide slide3"></div>
+                <div class="swiper-slide slide4"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>신제품</h1>
+        <!-- 800x400 스와이퍼 3장짜리 슬라이드 제작 -->
+        <div class="swiper new_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1"><img src="./images/bnr1.jpg" alt=""></div>
+                <div class="swiper-slide slide2"><img src="./images/bnr2.jpg" alt=""></div>
+                <div class="swiper-slide slide3"><img src="./images/bnr3.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>세일상품</h1>
+        <!-- 1200x450 4장 슬라이드 생성(이미지태그형태로) -->
+        <div class="swiper sale_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1"><img src="./images/bnr1.jpg" alt=""></div>
+                <div class="swiper-slide slide2"><img src="./images/bnr2.jpg" alt=""></div>
+                <div class="swiper-slide slide3"><img src="./images/bnr3.jpg" alt=""></div>
+                <div class="swiper-slide slide4"><img src="./images/bnr4.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <script>
+        //Swiper함수 적용 HTML대상을 괄호안에 정확히 작성한다.
+        const bestSwiper = new Swiper('.best_swiper');
+        const newSwiper = new Swiper('.new_swiper');
+        const saleSwiper = new Swiper('.sale_swiper');
+        /* Swiper는 모바일 터치에 최적화된 인기 있는 자바스크립트 슬라이드 라이브러리야 */
+        /* swipe 연결하면 .slide1,2,3,4 이미지들이 옆으로 넘어간다. */
+    </script>
+</body>
+</html>
+
+
+
+
+
+
