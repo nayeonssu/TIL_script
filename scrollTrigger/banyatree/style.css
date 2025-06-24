@@ -34,6 +34,9 @@ footer {display:flex; justify-content:space-around; align-items:center;backgroun
 footer .logo {}
 footer .logo img {}
 footer .copy {color:#aaa; font-size:0.91rem; text-transform:uppercase;}
+.ani1 {
+    
+}
 @keyframes bgani1 {
     0% {scale:1.05;}
     100% {scale:1;}
